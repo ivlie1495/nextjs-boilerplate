@@ -8,7 +8,7 @@ A modern full-stack web application built with Next.js, Prisma ORM, PostgreSQL, 
 - **Database**: PostgreSQL with Prisma ORM
 - **UI Library**: Material UI (MUI) v7
 - **Styling**: Emotion (CSS-in-JS)
-- **Package Manager**: npm
+- **Package Manager**: bun
 
 ## Current Setup
 
@@ -25,14 +25,14 @@ This project is configured with:
 
 - Node.js 18+ installed
 - PostgreSQL database running
-- npm package manager
+- bun package manager
 
 ## Getting Started
 
 ### 1. Install Dependencies
 
 ```bash
-npm install
+bun install
 ```
 
 ### 2. Database Setup
@@ -51,22 +51,22 @@ Generate the Prisma Client and run migrations:
 
 ```bash
 # Generate Prisma Client
-npx prisma generate
+bunx prisma generate
 
 # Run database migrations
-npx prisma migrate dev --name init
+bunx prisma migrate dev --name init
 ```
 
 **Note**: If you encounter migration conflicts and this is a development database, you can reset it:
 
 ```bash
-npx prisma migrate reset
+bunx prisma migrate reset
 ```
 
 ### 4. Run Development Server
 
 ```bash
-npm run dev
+bun run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to see the app.
@@ -118,20 +118,20 @@ Custom theme features:
 ### Development
 
 ```bash
-npm run dev          # Start development server
-npm run build        # Build for production
-npm start            # Start production server
-npm run lint         # Run ESLint
+bun run dev          # Start development server
+bun run build        # Build for production
+bun start            # Start production server
+bun run lint         # Run ESLint
 ```
 
 ### Prisma Commands
 
 ```bash
-npx prisma studio           # Open Prisma Studio (visual database editor)
-npx prisma generate         # Generate Prisma Client
-npx prisma migrate dev      # Create and apply migrations
-npx prisma migrate reset    # Reset database (development only)
-npx prisma db push          # Push schema changes without migrations
+bunx prisma studio           # Open Prisma Studio (visual database editor)
+bunx prisma generate         # Generate Prisma Client
+bunx prisma migrate dev      # Create and apply migrations
+bunx prisma migrate reset    # Reset database (development only)
+bunx prisma db push          # Push schema changes without migrations
 ```
 
 ## Database Connection
@@ -155,7 +155,7 @@ To connect to a different database, update this URL with your credentials.
 ### Prisma Client Not Found
 
 ```bash
-npx prisma generate
+bunx prisma generate
 ```
 
 ### Migration Conflicts
@@ -163,14 +163,14 @@ npx prisma generate
 If you see migration drift errors:
 
 ```bash
-npx prisma migrate reset    # Development only!
-npx prisma migrate dev
+bunx prisma migrate reset    # Development only!
+bunx prisma migrate dev
 ```
 
 ### TypeScript Errors
 
 ```bash
-npm run build --verbose
+bun run build --verbose
 ```
 
 ## Next Steps

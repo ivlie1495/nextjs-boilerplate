@@ -3,7 +3,11 @@
     "allow": [
       "Bash(bun add:*)",
       "Bash(bunx shadcn@latest init:*)",
-      "Bash(bunx shadcn@latest add:*)"
+      "Bash(bunx shadcn@latest add:*)",
+      "Bash(bunx prisma init:*)",
+      "Bash(bun:*)",
+      "Bash(test:*)",
+      "Bash(bunx prisma validate:*)"
     ],
     "defaultMode": "acceptEdits"
   }

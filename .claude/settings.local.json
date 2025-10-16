@@ -1,5 +1,10 @@
 {
   "permissions": {
-    "defaultMode": "bypassPermissions"
+    "allow": [
+      "Bash(bun add:*)",
+      "Bash(bunx shadcn@latest init:*)",
+      "Bash(bunx shadcn@latest add:*)"
+    ],
+    "defaultMode": "acceptEdits"
   }
 }
